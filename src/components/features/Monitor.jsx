@@ -1,6 +1,8 @@
+import useCalculatorStore from '@/stores/useCalculatorStore'
 import React from 'react'
 
-const Monitor = ({result,display}) => {
+const Monitor = () => {
+  const{result,display}=useCalculatorStore()
   return (
    <section className="flex justify-end px-3 py-3 lg:h-[27%] md:h-[20%] sm:h-[11%] ">
     <div className="">
